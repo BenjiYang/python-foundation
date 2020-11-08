@@ -1,0 +1,15 @@
+p {
+    color: green
+}
+
+.main_class {
+    color: gray
+}
+
+#tag_id {
+    color: blue
+}
+
+div p {
+    font-size: 80px
+}

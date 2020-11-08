@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>people list page</title>
+</head>
+<body>
+    <ul>
+        <br>直接打印数据，为原生list:<br>
+        <li>{{people_list}}</li>
+    </ul>
+
+    <ul>
+        <br>for 循环的结果，成字典:<br>
+        {% for people in people_list %}
+        <li>{{people}}</li>
+        {% endfor %}
+    </ul>
+    
+    <ul>
+        <br>for 循环的结果，只抽取姓名:<br>
+        {% for people in people_list %}
+        <li>{{people.name}}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
